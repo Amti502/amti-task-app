@@ -20,13 +20,12 @@ Este proyecto fue desarrollado como parte de un ejercicio de preparación.
 
 1.  **Clonar el Repositorio:**
     ```bash
-    git clone https://github.com/TU_USUARIO_GITHUB/NOMBRE_DE_TU_REPOSITORIO.git
+    git clone https://github.com/Amti502/amti-task-app.git
     ```
-    (Reemplaza `TU_USUARIO_GITHUB` y `NOMBRE_DE_TU_REPOSITORIO` con los tuyos reales)
 
 2.  **Navegar a la Carpeta del Proyecto:**
     ```bash
-    cd NOMBRE_DE_TU_REPOSITORIO
+    cd amti-task-app
     ```
 
 3.  **Opción A: Construir y Ejecutar con Maven (Recomendado para un JAR ejecutable):**
@@ -34,15 +33,15 @@ Este proyecto fue desarrollado como parte de un ejercicio de preparación.
         ```bash
         mvn clean package
         ```
-    *   Ejecutar el archivo JAR generado (asegúrate de que el nombre del JAR coincida):
+    *   Ejecutar el archivo JAR generado (asegúrate de que el nombre del JAR coincida con el de tu carpeta `target` después de construir):
         ```bash
         java -jar target/amti-1.0-SNAPSHOT.jar
         ```
-        (El nombre del JAR podría ser diferente según tu `artifactId` y `version` en `pom.xml`)
+        (El nombre exacto del JAR es `amti-1.0-SNAPSHOT.jar` según tu `pom.xml`. Si cambias la versión o el `artifactId` en el `pom.xml`, este nombre cambiará).
 
 4.  **Opción B: Ejecutar desde un IDE (como IntelliJ IDEA):**
     *   Importa el proyecto como un proyecto Maven.
-    *   Localiza la clase `org.example.Main` (o `com.tu.paquete.Main` si lo renombraste).
+    *   Localiza la clase `org.example.Main` (o `com.matias.taskmanager.Main` si renombraste tu paquete `groupId` a `com.matias.taskmanager` en el `pom.xml` y en tus archivos Java).
     *   Ejecuta el método `main` de esa clase.
 
 ## Cómo Usar la Aplicación de Consola
@@ -64,7 +63,7 @@ Después de seleccionar la opción "5" en el menú de la consola, el servidor AP
 
 ## Autor
 
-Matias [Tu Apellido si quieres]
+Matias Guzman
 
 ---
 
